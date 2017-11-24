@@ -22,32 +22,8 @@ To.개발자님
        if(ch=='0'||ch=='7'||ch=='8'||ch=='9'){...}
  * */
 
-public class Ssn {
+public class Ssn1 {
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		String name ="",ssn ="", gender="";
-		String[] arr = {
-		"이름을 입력하세요\n",
-	    "-포함 주민번호를 입력하세요\n",
-	    "남자입니다\n",
-	    "여자입니다\n",
-	    "외국인입니다\n",
-	    "다시 입력해주세요\n"
-		};
-		System.out.print(arr[0]);
-		name = scanner.next();
-		System.out.print(arr[1]);
-		ssn = scanner.next();
-		char ch = ssn.charAt(7);
-		if(ch=='1'||ch=='3') {
-		System.out.print(arr[2]);
-		}else if(ch=='2'||ch=='4') {
-		System.out.print(arr[3]);
-		}else if(ch=='5'||ch=='6') {
-		System.out.print(arr[4]);
-		}else if(ch=='0'||ch=='7'||ch=='8'||ch=='9') {
-		System.out.print(arr[5]);
-		}
-		System.out.print("");
+	
 	}
 }

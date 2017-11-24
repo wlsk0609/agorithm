@@ -7,13 +7,21 @@ public class GradeReport {
 		Scanner scanner = new Scanner(System.in);
 		int kor =0,met =0,eng =0,ave =0;
 		String name ="" ,cred ="" ;
-		System.out.print("이름은?");
+		String[] arr = {
+				"이름은?",
+				"국어점수는?",
+				"수학점수는?",
+				"영어점수는?",
+				"%s [평균] %d [학점] %s"
+				
+		};
+		System.out.print(arr[0]);
 		name = scanner.next();
-		System.out.print("국어점수는?");
+		System.out.print(arr[1]);
 		kor = scanner.nextInt();
-		System.out.print("수학점수는?");
+		System.out.print(arr[2]);
 		met = scanner.nextInt();
-		System.out.print("영어점수는?");
+		System.out.print(arr[3]);
 		eng = scanner.nextInt();
 		ave = (kor +met +eng) /3;
 		
@@ -25,6 +33,6 @@ public class GradeReport {
 		default : cred = "F";break;
 		}
 		
-		System.out.printf( "%s [평균] %d [학점] %s" ,name,ave,cred);
+		System.out.printf( arr[4] ,name,ave,cred);
 	}
 }

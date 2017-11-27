@@ -48,6 +48,6 @@ public class Ssn {
 		}else if(ch=='0'||ch=='7'||ch=='8'||ch=='9') {
 		System.out.print(arr[5]);
 		}
-		System.out.print("");
+		System.out.printf("%s:%s:%s",name,ssn,gender);
 	}
 }
